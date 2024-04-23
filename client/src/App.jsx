@@ -20,7 +20,7 @@ import CommunityPage from "./pages/Community";
 
 // import ProtectedRoute from './pages/ProtectedRoute';
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "http://shadow-team.shop:3000";
 axios.defaults.withCredentials = true;
 
 function App() {
