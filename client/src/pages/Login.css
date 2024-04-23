@@ -1,0 +1,100 @@
+/* Login Form Container */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+img{
+  max-height: 400px;
+ 
+ 
+}
+.image-div1{
+  margin-left: 90px;
+  
+}
+.image-div2{
+  margin-right: 100px;
+
+}
+.login-container {
+  z-index: 1;
+  max-width: 400px;
+  margin: 150px;
+  background: linear-gradient(to bottom, #1385b6, #083988);
+  margin-top: 100px;
+  padding: 40px;
+  /* Background image */
+  
+  border: 1px solid #ddc8b6;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Title */
+.login-title {
+  font-size: 28px; /* Slightly larger title */
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3ecff7; /* Darker text color for contrast */
+}
+
+/* Form Fields */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 10px; /* Increased margin for spacing */
+  color: #3ecff7; /* Slightly darker label color */
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 12px; /* Slightly larger padding for input fields */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  border: 1px solid #ddc8b6; /* Slightly lighter border */
+  border-radius: 5px; /* Slightly larger border radius for a softer look */
+  font-size: 18px; /* Slightly larger font size */
+  color: #333; /* Darker text color for contrast */
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: #bd9013; /* Change border color on focus */
+  transform: scale(1.05); /* Slight scale-up effect on focus */
+}
+
+
+/* Submit Button */
+.login-btn {
+  background: linear-gradient(to bottom, #119dda, #0e56cb); /* Accent color for the button */
+  color: #fff;
+  padding: 12px 24px; /* Increased padding for the button */
+  border: none;
+  border-radius: 5px;
+  font-size: 20px; /* Larger font size for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.login-form input[type="email"]:hover,
+.login-form input[type="password"]:hover {
+  border-color: #bd9013; /* Change border color on hover */
+  transform: scale(1.02); /* Slight scale-up effect on hover */
+}
+
+.login-btn:hover {
+  background: linear-gradient(to bottom, #9dcee3, #497ed2); /* Darker accent color on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle box shadow on hover */
+}
+
+/* Error Message */
+.error-message {
+  color: #f00;
+  font-size: 16px; /* Slightly larger font size for error message */
+  margin-top: 15px; /* Increased margin for spacing */
+}

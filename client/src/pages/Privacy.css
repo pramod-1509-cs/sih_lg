@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('C:\\Users\\hp\\Desktop\\about and privacy\\cloud_bg2.jpg'); /* Updated background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-privacy {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(188, 218, 232, 0.8); /* Slightly more transparent */
+    padding: 20px;
+}
+
+.privacy-section {
+    background-color: rgba(188, 218, 232, 0.8);/* Slightly more transparent */
+    padding: 20px;
+    
+}
+
+.section-title {
+    font-size: 32px; /* Increase font size for the section title */
+    font-weight: bold;
+    color: #d02222;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline; /* Underline the title */
+}
+
+.section-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 24px; /* Adjust font size for subheadings */
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 20px;
+}

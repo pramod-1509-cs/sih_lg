@@ -1,0 +1,59 @@
+/* Dashboard.css */
+.dashboard-container{
+  background-image: url('./assets/cloud_bg2.jpg'); 
+  background-size: cover; 
+  
+  background-repeat: no-repeat; 
+  background-position: center center;
+  
+ height: 3000px;
+  width: 100%;
+  height: auto;
+}
+.level-section {
+    margin-top: 20px;
+    padding: 20px;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(8, 200, 222, 0.842);
+  }
+  
+  .level-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(10, 136, 215, 0.737);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Hover effect for the video element */
+  video:hover {
+    transform: scale(1.05);
+  }
+ 
+  .card {
+    /* width: calc(33.33% - 10px);
+     */
+     width: 300px;
+     height: 200px;
+    padding: 20px;
+    background-color: #003b6c;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 225, 255, 0.817);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  

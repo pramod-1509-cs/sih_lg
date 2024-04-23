@@ -1,0 +1,65 @@
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7; /* A light background color for the entire page */
+}
+
+/* Styling for the container */
+.container-about {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(188, 218, 232, 0.8); /* A white background for the container */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* A subtle box shadow */
+    display: block;
+}
+
+/* Styling for the title */
+.title {
+    text-align: center;
+    color: #e74c3c; /* Red color for the title */
+    font-size: 36px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* Styling for section headers */
+.header2 {
+    color: #3498db; /* Blue color for headers */
+    font-size: 28px; /* Slightly larger font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px; /* Increased top margin for separation */
+}
+
+/* Styling for regular text */
+.text {
+    font-size: 18px; /* Larger font size for better readability */
+    color: #333333; /* Dark text color */
+    line-height: 1.8; /* Increased line height for better spacing */
+}
+
+/* Highlighted text */
+.highlight {
+    background-color: #f9ca24; /* Yellow background for highlights */
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #333333; /* Dark text color for highlights */
+}
+
+/* Links */
+a {
+    color: #3498db; /* Blue color for links */
+    text-decoration: underline;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #e74c3c; /* Red color on hover */
+}

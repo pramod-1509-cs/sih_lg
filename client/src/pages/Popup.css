@@ -1,0 +1,41 @@
+/* Styling for the pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start off-screen to the right */
+    width: 300px;
+    height: 150px;
+    margin-top: 200px;
+    background-color: #88fef7;
+    transition: right 0.5s ease-in-out; /* Adjust the duration as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  p{
+    margin-top: 0;
+  }
+  
+  .popup.visible {
+    right: 0; /* Slide in from the right */
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  /* Add some animations to make it visually appealing */
+  .popup.visible .popup-content {
+    animation: fadeInUp 0.5s ease; /* Define a fade-in animation */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px); /* Start slightly below its final position */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

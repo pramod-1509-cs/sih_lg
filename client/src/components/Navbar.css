@@ -1,0 +1,171 @@
+/* Add your existing styles here */
+
+/* Make the navbar sticky */
+.navbar {
+  display: flex;
+  align-items: center;
+  background:rgba(1, 88, 169, 0.486);
+
+  padding: 10px 20px;
+  justify-content: center;
+  height: 50px;
+  /* border-radius: 200px; */
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 100; /* Ensure it's above other content */
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the "register" link */
+.register {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(to bottom, #86cae8, rgb(75, 134, 228)); 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/* Apply hover color to all nav links except "Register" */
+.nav-link:not(.register):hover {
+  color: #3ecff7; /* Change color on hover */
+}
+
+.logo{
+  height: 40px;
+  margin-right: 600px;
+  margin-left: -10px;
+}
+.navbar a{
+  color: black;
+}
+.chatIcon {
+  height: 35px;
+  width: 35px;
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.chatIcon:hover {
+  transform: scale(10.8); /* Increase size on hover */
+
+   /* Add a subtle shadow on hover */
+  animation: pulse 0.5s infinite alternate; /* Create a pulsating animation on hover */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.register:hover {
+  background: linear-gradient(to bottom, #61bee6, #134088); /* Hover color */
+  transform: scale(1.05); /* Hover scale effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hover box shadow */
+}
+
+/* Styling for the "register" link */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3ecff7; /* Your desired color */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 67px;
+  right: -200px; /* Changed from '200px' to '-200px' */
+  width: 200px;
+  height: 100%;
+  background-color: #a38888;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: -200px; /* Adjusted margin-right */
+  }
+
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .nav-link {
+    margin: 0;
+    padding: 10px 20px;
+  }
+}
