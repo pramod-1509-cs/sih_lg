@@ -38,14 +38,14 @@ const Home = () => {
       <Popup isVisible={showPopup} />
       <section className="section section2">
         <div className="content">
-          <div className="card card1">
-            <h1>Games</h1>
+          {/* <div className="card card1"> */}
+            {/* <h1>Games</h1> */}
 
             {/* <a href="http://127.0.0.1:5500/client/interactive-play/index.html"><img src={game1} alt="" /></a> */}
-            <Link to="/register2" className="click">
-              <img src={game1} alt="" />
-            </Link>
-          </div>
+            {/* <Link to="/register2" className="click"> */}
+              {/* <img src={game1} alt="" /> */}
+            {/* </Link> */}
+          {/* </div>  */}
           <div className="card card2">
             <h1>Quizes</h1>
             <Link to="/quiz-app" className="click">
